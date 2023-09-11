@@ -1,0 +1,6 @@
+<div class="d-flex justify-content-center">
+    <img [ngStyle]="{ display: hasLoader ? '' : 'none'  }" [src]="url" [alt]="alt" class="card-img-top animate__animated animate__jackInTheBox" (load)="onLoad()">
+
+    <img  src="assets/loader/loader.svg" *ngIf="!hasLoader" height="35" width="35" class="mt-3">
+
+</div>

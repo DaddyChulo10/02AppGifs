@@ -1,0 +1,12 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-light text-center">Gifs App</h3>
+    <hr>
+
+    <div class="list-group list-reset">
+        <small class="text-center" style="color: white;">Seleccione para ver de nuevo:</small>
+        <hr>
+        <button *ngFor="let item of tags" (click)="buscar(item)" class="list-group-item list-group-item-action" >
+            {{item | titlecase }}
+        </button>
+    </div>
+</div>
